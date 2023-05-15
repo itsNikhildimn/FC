@@ -212,7 +212,9 @@ a {
   transform: scaleX(1);
   height: 1.5px;
 }
-
+.acc-nav{
+  display: none;
+}
 
 /* -------------------//Link-Styling */
 .double-arrow {
@@ -510,11 +512,8 @@ max-width: 37rem;
   line-height: 1.5rem;
   margin-bottom: 1.4rem;
 }
-
-.card-shift .image-cover:hover .content {
-  visibility: visible;
-  background-color: var(--white-clr);
-  height: 9rem;
+.display-block{
+  display: none;
 }
 
 /* -----------------//Section3 Our-Work */
@@ -1355,7 +1354,8 @@ footer .container {
 
 .career-btns {
   margin: 3rem 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5 ,1fr);
   gap: 1rem;
 }
 
