@@ -110,6 +110,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 14px 40px;
+
   gap: 5px;
   color: var(--heading-clr);
   font-size: 0.875;
@@ -131,6 +132,7 @@ a {
   background: #ffffff;
   border: 0.5px solid black;
   border-radius: 1.875rem;
+  min-width: 8rem;
 }
 
 .black-btn-lg {
@@ -155,6 +157,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 14px 40px;
+
   gap: 5px;
   color: var(--white-clr);
   font-size: 0.875;
@@ -210,28 +213,7 @@ a {
   height: 1.5px;
 }
 
-/* .owl-theme .owl-dots, .owl-theme .owl-nav {
-  text-align: center;
-  -webkit-tap-highlight-color: transparent;
-}
-button.owl-prev{
-  position: relative;
-}
-button.owl-prev{
-  position: absolute;
-  left:43%;
-  top: 380px;
-  font-size: 2rem !important;
-}
-button.owl-next{
-  position: absolute;
-  left:54%;
-  top: 380px;
-  font-size: 2rem !important;
-}
-.owl-theme .owl-dots{
-  padding-top: 0.3rem;
-} */
+
 /* -------------------//Link-Styling */
 .double-arrow {
   height: 7px;
@@ -287,7 +269,9 @@ i {
 .grid-row {
   display: grid;
 }
-
+.desktop{
+  display: none;
+}
 /* --------------------Header Styling */
 
 header .container {
@@ -749,29 +733,27 @@ max-width: 37rem;
 .team-discription .disc .disc-content h3 {
   margin-bottom: 1.5rem;
 }
-
-.section5 .contact {
+ .contact {
   margin-top: 8rem;
   background: var(--Mild-Emb);
   padding: 5rem 7rem;
 }
-
-.section5 .contact .contect-content {
+ .contact .contect-content {
+  display: grid;
   grid-template-columns: 1fr 4fr;
 }
-
-.section5 .contact .uppercase {
+ .contact .uppercase {
   text-transform: uppercase;
   margin-top: 1rem;
 }
 
-.section5 .contact .r-content h2 {
+.contact .r-content h2 {
   font-size: 3rem;
   line-height: 4rem;
   letter-spacing: 2px;
 }
 
-.section5 .contact .r-content .main-para {
+ .contact .r-content .main-para {
   margin: 2rem 0 5rem 0;
   color: var(--para-grey);
 }
@@ -976,33 +958,32 @@ footer .container {
 
 
 /*  */
-.about-hero .main3 .grid-row {
+.main3 .grid-row {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 0.8rem;
   row-gap: 6rem;
   padding-top: 5rem;
 }
 
-.about-hero .main3 .grid-row .dim {
-  min-width: 19.688rem;
+ .main3 .grid-row .dim {
+  max-width: 19.688rem;
   height: 38.875rem;
 }
 
-.about-hero .main3 .grid-row .team-mate1 {
+.main3 .grid-row .team-mate1 {
   background: var(--Mild-Yellow);
   padding: 2rem 2.5rem;
 }
 
-.about-hero .main3 .grid-row .team-mate1 h3 {
+.main3 .grid-row .team-mate1 h3 {
   font-size: 1.7rem;
   margin: 1rem 0 1.3rem 0;
 }
-
-.about-hero .main3 .grid-row .team-mate1 button {
-  margin-top: 6rem;
+ .main3 .grid-row .team-mate1 button {
+  margin-top:3.5rem;
 }
 
-.about-hero .main3 .grid-row .dim .occupation {
+ .main3 .grid-row .dim .occupation {
   padding: 1.4rem 0.2rem;
   justify-content: space-between;
   align-items: center;
@@ -1014,11 +995,11 @@ footer .container {
 .about-hero .main3 .grid-row .area4{
   grid-area: 3 / 4 / 2 / 3;
 } */
-.about-hero .main3 .grid-row .team-mate2 .team-image {
+.main3 .grid-row .team-mate2 .team-image {
   position: relative;
 }
 
-.about-hero .main3 .team-image .social-icons .flex-row {
+ .main3 .team-image .social-icons .flex-row {
   position: absolute;
   width: 100%;
   top: 85%;
@@ -1028,13 +1009,13 @@ footer .container {
   transition: all 0.3s ease;
 }
 
-.about-hero .main3 .team-image:hover .social-icons .flex-row {
+ .main3 .team-image:hover .social-icons .flex-row {
   opacity: 1;
   gap: 0.5rem;
   top: 80%;
 }
 
-.about-hero .main3 .social-icons .circle {
+ .main3 .social-icons .circle {
   height: 2rem;
   width: 2rem;
   background: var(--Mild-grey);
@@ -1138,7 +1119,9 @@ footer .container {
 .work-main-container .about-contact-banner {
   margin-top: 7rem;
 }
-
+.img-min-height img{
+  height:15rem;
+}
 /* ---------------------//WORK PAGE */
 
 
@@ -1651,6 +1634,7 @@ background: rgb(68, 68, 68);
 .accordion-container .dis {
 padding: 2rem 0;
 }
+
 .accordionItem{
   border-bottom: 1px solid gainsboro;
   padding:   0.5rem 0;

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="querie.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -39,12 +40,13 @@
                     </div>
 
                     <div class="headerlinks">
-                        <nav>
+                        <nav >
                             <ul class="link flex-row">
 
                                 <li><a class="animated-link" href="/about.html"> About</a></li>
                                 <li><a class="animated-link" href="/work.html"> Work</a></li>
-                                <li> <a class="animated-link service"> Services</a></li>
+                                <li id="tab"> <a class="animated-link service"> Services</a></li>
+                                <li id="desktop"> <a  class="animated-link" href="/services.html"> Services</a></li>
                                
                                 <li><a class="animated-link" href="/blog.html">Blog</a> </li>
                                 <li><a class="animated-link" href="/career.html">Career</a> </li>
@@ -53,8 +55,17 @@
                         </nav>
                     </div>
 
-                    <button class="animated-btn-wt white-btn-lg">Get Started <img class="double-arrow"
+                    <button id="tab" class="animated-btn-wt white-btn-lg">Get Started <img class="double-arrow"
                             src="/assets/Images/rightdoubleArrow.svg" alt=""></button>
+
+
+                            <!-- hamburgeer menu -->
+
+                             <div class="ham-menu desktop">
+                                <i style="font-size: 1.3rem;" class="fa-duotone fa-bars"></i>
+                             </div>
+
+                            <!-- //hamburgeer menu -->
                 </div>
                     
    
@@ -152,7 +163,6 @@
     </div>
     <!--// DropDown -->
     <!-------- //Header -------->
-
     <!------------------ Main --------------->
 
     <div class="work-main-container container">
@@ -303,13 +313,13 @@
                     </div>
                 </div>
                 
-                <div class="about-contact-banner">
+                <div class="contact">
                     <div class="contect-content">
                         <p class="main-para uppercase">Contact Us</p>
 
                         <div class="r-content">
                             <h2>We're Passionate About Creating Innovative Websites</h2>
-                            <p class="card-para">David had a complex project that required a lot of customization, and
+                            <p class="main-para">David had a complex project that required a lot of customization, and
                                 he was impressed with the web development agency's level of customer service. </p>
                             <button class="animated-btn-bk black-btn-sm">
                                 Get in Touch <img class="double-arrow" src="/assets/Images/whiteDoubleArrow.svg" alt="">
@@ -317,7 +327,6 @@
                         </div>
                     </div>
                 </div>
-
               
             </div>
         </section>
