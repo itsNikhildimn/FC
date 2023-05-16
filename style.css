@@ -103,6 +103,13 @@ a {
   border-radius: 10rem;
   padding: 0.3rem 0.8rem;
 }
+.simple-btn:hover {
+  background: var(--black-clr);
+  border: 0.5px solid rgb(138, 138, 138);
+  color: var(--white-clr);
+  border-radius: 10rem;
+  padding: 0.3rem 0.8rem;
+}
 
 .white-btn-lg {
   display: flex;
@@ -271,7 +278,7 @@ i {
 .grid-row {
   display: grid;
 }
-.desktop{
+#desktop,.desktop{
   display: none;
 }
 /* --------------------Header Styling */
