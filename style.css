@@ -11,7 +11,6 @@
 body {
   /* background-color: burlywood; */
   font-family: "Manrope";
-  /* position: relative; */
 }
 
 :root {
@@ -275,6 +274,7 @@ i {
   margin-inline: auto;
   padding: 0 6.25rem;
   background-color: var(--primary-clr);
+
 }
 
 .flex-row {
@@ -1521,7 +1521,12 @@ footer .container {
   display: flex;
   justify-content: space-between;
 }
-
+#dis-block{
+  display: none;
+}
+#dis-none{
+  display: none;
+}
 /* -----------------//single Career */
 
 /* DropDown */

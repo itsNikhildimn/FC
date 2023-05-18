@@ -34,6 +34,7 @@
         z-index: 99;
         position: sticky;
         top: 0;
+        
     }
 
     header .container {
@@ -45,31 +46,58 @@
         justify-content: space-between;
         padding: 0.9rem 0;
     }
-
-    .headerlinks {
-        position: fixed;
-        z-index: 999;
+    .header{
+        position: relative;
+        overflow-x:hidden;
+      }
+ .headerlinks {
+        position:fixed;
+        z-index: 99;
         top: -100%;
-        right: 0%;
-        width: 100%;
-        /* height: 100; */
         background: var(--white-clr);
         padding: 4rem;
+        width: 100%;
         box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
             0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-        opacity: 0.9;
+        opacity: 0;
+        visibility: hidden;
         transition: all 0.3s ease-in-out;
+        text-align: center;
     }
 
     .headerlinks.active {
-        right: 0%;
-        top: 0%;
+        visibility: visible;
+        /* right: 0%; */
+        top: 10%;
+        opacity: 0.98;
     }
-
+    #dis-block{
+        display: block;
+      }
+    #dis-none{
+        display: none;
+      }
     .ham-menu {
         z-index: 1000;
+        transition: all 0.3s ease ;
     }
+    .ham-menu #hamb{
+        display: block;
+    }
+    .ham-menu.active #hamb{
+        display: none;
+    }
+    .ham-menu #cross{
+        display: none;
+    }
+    .ham-menu.active #cross{
+        display: block;
 
+    }
+    .ham-menu.active{
+        transform: rotate(-90deg);
+       
+    }
     .headerlinks nav .flex-row {
         gap: 2.5rem;
         flex-direction: column;
@@ -78,8 +106,7 @@
     .headerlinks nav .flex-row .animated-link {
         text-align: left;
     }
-
-    /* ///Navvbar styling */
+  /* ///Navvbar styling */
     h1 {
         font-size: 3rem;
         line-height: 4rem;
@@ -461,12 +488,13 @@
         /* height: 100vh; */
     }
     .section1 .container .flex-row .content {
+        margin-top: 0.8rem;
         display: flex;
         align-items: center;
         justify-content: center;
         max-width: 20rem;
         margin: 0 auto;
-        gap:1.5rem;
+        gap:1.7rem;
     }
 
     .section1 .container .flex-row .content p {

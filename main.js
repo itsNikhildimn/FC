@@ -5,7 +5,8 @@ const  hamb = document.querySelector('.ham-menu');
 const sidenav = document.querySelector('.headerlinks');
 const footeraccordions = document.querySelectorAll(".footerCol2");
 const footerlinks = document.querySelectorAll(".acc-links");
-
+const bars = document.querySelector('#hamb');
+const cross = document.querySelector('#cross');
 
 servicebtn.addEventListener('mouseenter', () => {
     dropdown.classList.add('active');
@@ -14,7 +15,8 @@ dropdown.addEventListener('mouseleave', () => {
     dropdown.classList.remove('active');
 });
 hamb.addEventListener('click',() => { 
-   sidenav.classList.toggle('active')
+   sidenav.classList.toggle('active');
+   hamb.classList.toggle('active')
 });
 footeraccordions.forEach((footeraccordion) => {
     footeraccordion.addEventListener('click',()=> {

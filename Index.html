@@ -26,11 +26,29 @@
 
 <body>
     <!-------- Header -------->
-    <header>
+    <div class="headerlinks" id="dis-block">
+        <nav>
+            <ul class="link flex-row">
 
+                <li><a class="animated-link" href="/about.html"> About</a></li>
+                <li><a class="animated-link" href="/work.html"> Work</a></li>
+                <li id="tab"> <a class="animated-link service"> Services</a></li>
+                <li id="desktop"> <a class="animated-link" href="/services.html"> Services</a></li>
+
+                <li><a class="animated-link" href="/blog.html">Blog</a> </li>
+                <li><a class="animated-link" href="/career.html">Career</a> </li>
+                <li><a class="animated-link" href="/contact.html">Contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <header>
+        
         <div class="header">
+           
             <div class="container relative">
-                <div class="flex-row">
+                <div class="flex-row relative-mobile">
 
 
                     <div class="headerlogo">
@@ -39,7 +57,7 @@
                         </div>
                     </div>
 
-                    <div class="headerlinks">
+                    <div class="headerlinks" id="dis-none">
                         <nav>
                             <ul class="link flex-row">
 
@@ -62,7 +80,9 @@
                     <!-- hamburgeer menu -->
 
                     <div class="ham-menu desktop">
-                        <i style="font-size: 1.3rem;" class="fa-duotone fa-bars"></i>
+                        <i id="hamb" style="font-size: 1.5rem;" class="fa-duotone fa-bars"></i>
+
+                        <i id="cross" style="font-size: 1.6rem; " class="fa-solid fa-xmark"></i>
                     </div>
 
                     <!-- //hamburgeer menu -->
@@ -859,13 +879,18 @@
     <!-- //Footer -->
 
 </body>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
     integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 <script src="jquery.min.js"></script>
+
 <script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="main.js"></script>
 
